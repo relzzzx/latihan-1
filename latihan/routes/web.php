@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PosterController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -9,4 +9,4 @@ Route::get('/', function () {
 
 Route::view('/form', 'form');
 
-Route::post('/submit-poster', [ProfileController::class, 'submit']);
+Route::post('/submit-poster', [PosterController::class, 'submit']);
